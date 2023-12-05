@@ -22,5 +22,6 @@ class ContaDeBanco {
 const minhaConta = new ContaDeBanco("Thaysa", 2500);
 
 console.log(minhaConta.exibirStatus());
+console.log(minhaConta._nomeCliente);
 
 console.log(`Pode pedir empréstimo? ${minhaConta._podePedirEmprestimo}`);
