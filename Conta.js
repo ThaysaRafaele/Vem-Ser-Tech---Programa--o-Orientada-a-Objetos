@@ -7,13 +7,13 @@ class ContaDeBanco {
       this.#saldo = saldoInicial;
     }
   
-    #podePedirEmprestimo() {
+    #PedirEmprestimo() {
       return this.#saldo > 2000;
     }
   
     #status() {
-        console.log(`Pode pedir empréstimo? ${this.#podePedirEmprestimo()}`);
-        
+        console.log(`Pode pedir empréstimo? ${this.#PedirEmprestimo()}`);
+
         return `O cliente ${this.#nomeCliente} possui ${this.#saldo} reais de saldo no banco`;
     }
   
