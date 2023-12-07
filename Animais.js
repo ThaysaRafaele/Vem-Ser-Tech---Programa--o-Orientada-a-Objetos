@@ -4,7 +4,7 @@ class Animal {
     }
   
     fazerSom() {
-      console.log('Som do animal');
+      console.log(`${this.nome} faz um som.`);
     }
   
     dormir() {
@@ -12,20 +12,14 @@ class Animal {
     }
   }
   
-  class Mamifero extends Animal {
-    fazerSom() {
-      console.log(`${this.nome} faz um som de mamífero.`);
-    }
-  
+  class Mamifero extends Animal {  
+    
     amamentar() {
       console.log(`${this.nome} está amamentando.`);
     }
   }
 
   class Ave extends Animal {
-    fazerSom() {
-      console.log(`${this.nome} faz um som de ave.`);
-    }
   
     voar() {
       console.log(`${this.nome} está voando.`);
