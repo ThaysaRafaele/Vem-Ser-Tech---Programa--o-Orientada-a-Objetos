@@ -13,7 +13,7 @@ class Animal {
   }
   
   class Mamifero extends Animal {  
-    
+
     amamentar() {
       console.log(`${this.nome} está amamentando.`);
     }
@@ -34,6 +34,20 @@ class Animal {
         // botarOvos() {
         //     console.log(`${this.nome} está botando ovos.`);
         //   }
+
+        constructor(nome) {
+          super(nome);  // Chama o construtor de Mamifero
+          this.mamifero = new Mamifero(nome);
+          this.ave = new Ave(nome);
+        }
+
+        amamentar() {
+          this.mamifero.amamentar();
+        }
+      
+        botarOvos() {
+          this.ave.botarOvos();
+        }
   }
 
   class Pinguim extends Ave {
