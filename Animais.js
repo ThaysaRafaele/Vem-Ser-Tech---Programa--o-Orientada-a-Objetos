@@ -21,6 +21,7 @@ class Animal {
       console.log(`${this.nome} está amamentando.`);
     }
   }
+<<<<<<< HEAD
 
   class Ave extends Animal {
     fazerSom() {
@@ -67,3 +68,11 @@ pinguim.nadar();
 
 //a classe Mamifero herda a classe Animal
 //Ornitorrinco herda tanto de Mamifero quanto de Ave (botar ovos)
+=======
+  
+  const gato = new Mamifero('Vaca');
+  gato.fazerSom(); // Saída: Vaca faz um som de mamífero.
+  gato.dormir();   // Saída: Vaca está dormindo.
+  gato.amamentar(); // Saída: Vaca está amamentando.
+  
+>>>>>>> 696617d97c0f8c946c9d0828609e82654b1d18ee
