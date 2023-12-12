@@ -45,6 +45,7 @@ class Match {
       .map((letra) => (this.letrasAdivinhadas.includes(letra) ? letra : "_"))
       .join(" ");
     console.log("Palavra: " + palavraAdivinhada);
+    return palavraAdivinhada;
   }
 
   exibirTentativasRestantes() {
@@ -89,6 +90,7 @@ class GameController {
       console.log("Você perdeu. A palavra era: " + this.match.palavraSecreta);
       this.encerrarJogo();
     } else {
+      this.match.exibirPalavraAdivinhada();
       this.realizarJogada();
     }
   }
