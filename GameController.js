@@ -32,4 +32,8 @@ class GameController {
     }
   }
 
+  encerrarJogo() {
+    console.log("Jogo encerrado. Pontuação final: " + this.player.pontuacao);
+  }
+
 }
